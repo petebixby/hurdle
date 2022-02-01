@@ -1,0 +1,203 @@
+{
+    "keys" : [
+        { 
+            "row"  :  "1",
+            "col"  :  "0",
+            "big"  :  "0",
+            "label" : "A",
+            "keycode" : "65"
+        },
+        {
+            "row"  :  "2",
+            "col"  :  "5",
+            "big"  :  "0",
+            "label" : "B",
+            "keycode" : "66"
+        },
+        {
+            "row"  :  "2",
+            "col"  :  "3",
+            "big"  :  "0",
+            "label" : "C",
+            "keycode" : "67"
+        },
+        {
+            "row"  :  "1",
+            "col"  :  "2",
+            "big"  :  "0",
+            "label" : "D",
+            "keycode" : "68"
+        },
+        {
+            "row"  :  "0",
+            "col"  :  "2",
+            "big"  :  "0",
+            "label" : "E",
+            "keycode" : "69"
+        },
+        {
+            "row"  :  "1",
+            "col"  :  "3",
+            "big"  :  "0",
+            "label" : "F",
+            "keycode" : "70"
+        },
+        {
+            "row"  :  "1",
+            "col"  :  "4",
+            "big"  :  "0",
+            "label" : "G",
+            "keycode" : "71"
+        },
+        {
+            "row"  :  "1",
+            "col"  :  "5",
+            "big"  :  "0",
+            "label" : "H",
+            "keycode" : "72"
+        },
+        {
+            "row"  :  "0",
+            "col"  :  "7",
+            "big"  :  "0",
+            "label" : "I",
+            "keycode" : "73"
+        },
+        {
+            "row"  :  "1",
+            "col"  :  "6",
+            "big"  :  "0",
+            "label" : "J",
+            "keycode" : "74"
+        },
+        {
+            "row"  :  "1",
+            "col"  :  "7",
+            "big"  :  "0",
+            "label" : "K",
+            "keycode" : "75"
+        },
+        {
+            "row"  :  "1",
+            "col"  :  "8",
+            "big"  :  "0",
+            "label" : "L",
+            "keycode" : "76"
+        },
+        {
+            "row"  :  "2",
+            "col"  :  "7",
+            "big"  :  "0",
+            "label" : "M",
+            "keycode" : "77"
+        },
+        {
+            "row"  :  "2",
+            "col"  :  "6",
+            "big"  :  "0",
+            "label" : "N",
+            "keycode" : "78"
+        },
+        {
+            "row"  :  "0",
+            "col"  :  "8",
+            "big"  :  "0",
+            "label" : "O",
+            "keycode" : "79"
+        },
+        {
+            "row"  :  "0",
+            "col"  :  "9",
+            "big"  :  "0",
+            "label" : "P",
+            "keycode" : "80"
+        },
+        {
+            "row"  :  "0",
+            "col"  :  "0",
+            "big"  :  "0",
+            "label" : "Q",
+            "keycode" : "81"
+        },
+        {
+            "row"  :  "0",
+            "col"  :  "3",
+            "big"  :  "0",
+            "label" : "R",
+            "keycode" : "82"
+        },
+        {
+            "row"  :  "1",
+            "col"  :  "1",
+            "big"  :  "0",
+            "label" : "S",
+            "keycode" : "83"
+        },
+        {
+            "row"  :  "0",
+            "col"  :  "4",
+            "big"  :  "0",
+            "label" : "T",
+            "keycode" : "84"
+        },
+        {
+            "row"  :  "0",
+            "col"  :  "6",
+            "big"  :  "0",
+            "label" : "U",
+            "keycode" : "85"
+        },
+        {
+            "row"  :  "2",
+            "col"  :  "4",
+            "big"  :  "0",
+            "label" : "V",
+            "keycode" : "86"
+        },
+        {
+            "row"  :  "0",
+            "col"  :  "1",
+            "big"  :  "0",
+            "label" : "W",
+            "keycode" : "87"
+        },
+        {
+            "row"  :  "2",
+            "col"  :  "2",
+            "big"  :  "0",
+            "label" : "X",
+            "keycode" : "88"
+        },
+        {
+            "row"  :  "0",
+            "col"  :  "5",
+            "big"  :  "0",
+            "label" : "Y",
+            "keycode" : "89"
+        },
+        {
+            "row"  :  "2",
+            "col"  :  "1",
+            "big"  :  "0",
+            "label" : "Z",
+            "keycode" : "90"
+        },
+        {
+            "row"  :  "2",
+            "col"  :  "0",
+            "big"  :  "-1",
+            "label" : "DEL",
+            "keycode" : "46"
+        },
+        {
+            "row"  :  "2",
+            "col"  :  "8",
+            "big"  :  "1",
+            "label" : "Enter",
+            "keycode" : "13"
+        }
+    ]
+}
+
+
+
