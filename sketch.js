@@ -78,6 +78,13 @@ var kb;
 
 var ScreenOff = 0;
 
+// The following values are used to try and eliminate what looks like
+// key bounce on phones and tablet with touch screens. We'll keep track
+// of the last keycode and we'll also have a counter that'll be counted
+// down by draw().
+var lastKeyCode = 0;
+var debounce    = 0;
+
 /* =================================================================== */
 // Preload the dictionary and keyboard layout
 function preload() {
@@ -111,7 +118,7 @@ function setup() {
     button = createButton('New Game');
     button.position(Butx-ScreenOff, Buty);
     button.mousePressed(newGame);
-    frameRate(10);
+    frameRate(20);
 
     // Instantiate the keyboard
     if (DoKB) {
@@ -123,6 +130,12 @@ function setup() {
 
 // Redraw the screen (if necessary)
 function draw() {
+    // Attempt to fix double keys on touch screens
+    if (debounce > 0) {
+        debounce--;
+    }
+
+    // If someone requested a screen redraw
     if (reDraw) {
         background(220);
         for(let i=0; i<6; i++) {
@@ -135,8 +148,10 @@ function draw() {
         }
 
     }
+
+    // Fake a blinking cursor
     if (Cursor) {
-        if (((frameCount % 10) > 5) && (inputCol < 5) & (inputRow < 6)) {
+        if (((frameCount % 20) > 10) && (inputCol < 5) & (inputRow < 6)) {
             letters[inputRow][inputCol].cursor(true);
         }
     }
@@ -500,11 +515,19 @@ class Keyboard {
             let ksiz;
 
             for(let i = 0; i<28; i++) {
+                let kc;
                 kpos = keys[i].getpos();
                 ksiz = keys[i].getsize();
                 if (((x >= kpos.x) && (x <= kpos.x+ksiz.x)) &&
                     ((y >= kpos.y) && (y <= kpos.y+ksiz.y))) {
-                    handleKeyPress(keys[i].getkeycode());
+                    kc = keys[i].getkeycode();
+                    if ((debounce > 0) && (kc == lastKeyCode)) {
+                        // ignore
+                    } else { 
+                        handleKeyPress(kc);
+                        lastKeyCode = kc;
+                        debounce = 4;
+                    }
                     return;
                 }
             }
